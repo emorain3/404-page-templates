@@ -1,0 +1,128 @@
+
+:root {
+    --light_fuschia: #c10288;
+    --fuschia: #860465;
+    --periwinkle: #CCCCFF;
+    --periwinkle-med: rgb(186, 186, 248);
+    --periwinkle-dark: rgb(151, 151, 221);
+}
+
+@font-face {
+    font-family: "3d-boi";
+    src: url("./fonts/the-fontry_race1-brannt-ncv/RACE1\ Brannt\ Chiseled\ NCV.ttf")
+}
+
+
+html { 
+    background-color: var(--fuschia);
+    /* background: url(./images/colorful-fluid-3d-shape-background/banner_text_removed_small-01.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+#bg_img {
+    position: fixed;
+    top:0;
+    left:0;
+    
+    height: auto;
+    width: 100vw;
+    
+    z-index: 0;
+}
+
+
+#page_content {
+    /* border: solid chartreuse; */
+    position: relative;
+
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* padding-top: 10vw; */
+    
+    z-index: 5;
+}
+
+
+h1 {        
+    /* DEBUGGING */
+    /* border: solid red; */
+    /* position: absolute;
+    top: 50%; 
+    right: 50%; */
+
+    /* Influenced by a CodePen from Ryan @ https://codepen.io/ryandsouza13/pen/yEBJQV */
+    
+    /* Sizing */
+    font-size: 15vw;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 700;
+
+    /* Coloring */
+    color: #f5f5f5;
+    text-shadow:1px 1px 1px var(--periwinkle),
+                1px 2px 1px var(--periwinkle),
+                1px 3px 1px var(--periwinkle),
+                1px 4px 1px var(--periwinkle),
+                1px 5px 1px var(--periwinkle),
+                1px 6px 1px var(--periwinkle-med),
+                1px 7px 1px var(--periwinkle-med),
+                1px 8px 1px var(--periwinkle-dark),
+                1px 9px 1px var(--periwinkle-dark),
+                1px 10px 1px var(--periwinkle-dark),
+                1px 18px 6px rgba(16,16,16,0.4),
+                1px 22px 10px rgba(16,16,16,0.2),
+                1px 25px 35px rgba(16,16,16,0.2),
+                1px 30px 60px rgba(16,16,16,0.4);
+    
+    /* Positioning */
+    align-self: baseline;
+    padding-left: 11vw;
+    padding-right: 10vw;
+
+    /* Hardcoding weird alignment issues */
+    margin-left: -5vw;
+    margin-top: 18vw;
+    
+}
+.subtext {
+    /* DEBUGGING */
+    /* border: solid red; */
+    /* position: absolute;
+    top: 90%; 
+    right: 50%; */
+    
+    /* Positioning */
+    align-self: center;
+    text-align: center;
+    
+    /* Text sizing */
+    font-family: 'Concert One', cursive;
+    font-size: 2vw;
+
+    /* Coloring */
+    color: white;
+    text-shadow: 1px 8px 6px rgba(16,16,16,0.4),
+                 1px 12px 10px rgba(16,16,16,0.2),
+                 1px 15px 35px rgba(54, 53, 53, 0.2),
+                 1px 20px 60px rgba(87, 84, 84, 0.4);
+                 /* Hardcoding weird alignment issues */
+                 margin-top: -20vw;
+                 
+                }
+                
+.subtext > p {
+    font-size: 1.5vw;
+    text-shadow: 1px 15px 35px rgba(54, 53, 53, 0.2),
+                 1px 20px 60px rgba(87, 84, 84, 0.4);
+}
